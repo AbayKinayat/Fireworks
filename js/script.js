@@ -56,13 +56,13 @@ closeCatalogBtn.addEventListener('click', closeCatalog)
 
 function showCatalog() {
   catalogSidebar.style.minWidth = '295px';
-  headerNavBurger.style.width = '0px';
+  headerNavBurger.classList.remove('header__catalog-burger_active');
   navSolid.classList.remove('header__nav-solid_active');
 }
 
 function closeCatalog() {
   catalogSidebar.style.minWidth = '0px';
-  headerNavBurger.style.width = '20%';
+  headerNavBurger.classList.add('header__catalog-burger_active')
 }
 const showNavSolidBtn = document.querySelector('.header__nav-burger');
 const navSolid = document.querySelector('.header__nav-solid');
